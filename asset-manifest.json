@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bootcamp14/./static/css/main.283dc6f8.chunk.css",
+    "main.js": "/bootcamp14/./static/js/main.405aa6ff.chunk.js",
+    "main.js.map": "/bootcamp14/./static/js/main.405aa6ff.chunk.js.map",
+    "runtime-main.js": "/bootcamp14/./static/js/runtime-main.1fe5a935.js",
+    "runtime-main.js.map": "/bootcamp14/./static/js/runtime-main.1fe5a935.js.map",
+    "static/js/2.d2dda028.chunk.js": "/bootcamp14/./static/js/2.d2dda028.chunk.js",
+    "static/js/2.d2dda028.chunk.js.map": "/bootcamp14/./static/js/2.d2dda028.chunk.js.map",
+    "index.html": "/bootcamp14/./index.html",
+    "precache-manifest.a9181280b6a5ec8533b149306fb89416.js": "/bootcamp14/./precache-manifest.a9181280b6a5ec8533b149306fb89416.js",
+    "service-worker.js": "/bootcamp14/./service-worker.js",
+    "static/css/main.283dc6f8.chunk.css.map": "/bootcamp14/./static/css/main.283dc6f8.chunk.css.map"
+  }
+}

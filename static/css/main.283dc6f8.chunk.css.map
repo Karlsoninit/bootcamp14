@@ -1,0 +1,1 @@
+{"version":3,"sources":["User.module.css"],"names":[],"mappings":"AAAA,uBACE,cAAe,CACf,SAAU,CACV,iBACF,CAEA,2BAEE,UACF","file":"main.283dc6f8.chunk.css","sourcesContent":[".textDecor {\n  font-size: 50px;\n  color: red;\n  text-align: center;\n}\n\n.newtextDecore {\n  composes: textDecor;\n  color: aqua;\n}\n"]}
