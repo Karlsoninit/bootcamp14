@@ -1,0 +1,10 @@
+.textDecor {
+  font-size: 50px;
+  color: red;
+  text-align: center;
+}
+
+.newtextDecore {
+  composes: textDecor;
+  color: aqua;
+}
