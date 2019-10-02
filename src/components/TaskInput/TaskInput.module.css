@@ -1,0 +1,8 @@
+.input {
+  margin-bottom: 20px;
+}
+
+.labelGroup {
+  display: flex;
+  flex-direction: column;
+}
