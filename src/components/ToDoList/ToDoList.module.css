@@ -1,0 +1,14 @@
+.listContainer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid green;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+}
+
+.preloader {
+  margin: auto;
+}
