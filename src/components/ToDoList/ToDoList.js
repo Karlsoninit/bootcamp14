@@ -31,9 +31,3 @@ ToDoList.propTypes = {
 };
 
 export default ToDoList;
-
-// PropTypes.shape({
-//     task: PropTypes.string,
-//     description: PropTypes.string,
-//     id: PropTypes.string,
-//   }),
