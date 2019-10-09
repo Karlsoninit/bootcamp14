@@ -10,6 +10,25 @@ class ToDo extends Component {
     description: '',
   };
 
+  componentDidMount() {
+    console.log('componentDidMount');
+
+    const getTaskToLocal = localStorage.getItem('tasks');
+    if (getTaskToLocal) {
+      this.setState({
+        tasks: JSON.parse(getTaskToLocal),
+      });
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { tasks } = this.state;
+    if (prevState.tasks !== tasks) {
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+    console.log('componentDidUpdate');
+  }
+
   handleSubmit = evt => {
     evt.preventDefault();
     this.addTask();
@@ -44,6 +63,7 @@ class ToDo extends Component {
   };
 
   render() {
+    console.log('render');
     const { tasks, task, description } = this.state;
 
     return (

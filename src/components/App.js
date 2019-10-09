@@ -1,10 +1,11 @@
 import React from 'react';
-import ToDo from './ToDo';
+import News from './News';
+// import ToDo from './ToDo';
 
 const App = () => {
   return (
     <>
-      <ToDo />
+      <News some="some" />
     </>
   );
 };
