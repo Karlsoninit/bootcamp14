@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getUniqueAuthor } from '../../routApi';
+
 class SingleArticle extends Component {
   state = {
     single: [],

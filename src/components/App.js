@@ -1,6 +1,6 @@
 import React from 'react';
-import RoutingUpComponent from './Routing/RoutingUpComponent/RoutingUpComponent';
 import { BrowserRouter as Router } from 'react-router-dom';
+import RoutingUpComponent from './Routing/RoutingUpComponent/RoutingUpComponent';
 // import News from './News';
 
 // import ToDo from './ToDo';

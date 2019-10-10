@@ -1,10 +1,10 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import Articles from '../pages/Articles/Articles';
 import SingleArticle from '../pages/SingleArticle/SingleArticle';
 import Description from '../pages/Description/Description';
 import PageNotFound from '../pages/PageNotFound/PageNotFound';
-import { Switch, Route } from 'react-router-dom';
 
 const RoutePage = () => (
   <Switch>

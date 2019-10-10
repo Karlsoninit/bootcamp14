@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import { fetchNews } from '../../routApi';
 import ArticleList from '../ArticleList/ArticleList';
-import { Route } from 'react-router-dom';
 import SingleArticle from '../SingleArticle/SingleArticle';
+
 class Articles extends Component {
   state = {
     news: [],

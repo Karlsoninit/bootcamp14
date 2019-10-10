@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
+
 const ArticleList = ({ data, match }) => {
   console.log('params', match);
   return (
