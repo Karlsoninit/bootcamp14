@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Togglable from '../renderProp/RenderProp';
 
 // const SearchNewsForm = ({ onChange, onSubmit, query }) => (
 //   <form onSubmit={onSubmit}>

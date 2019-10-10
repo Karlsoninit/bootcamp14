@@ -15,7 +15,9 @@ const fetcHOC = props => BaceComponents => {
     };
 
     render() {
-      return <BaceComponents data={this.getNewNews} {...this.props} />;
+      return (
+        <BaceComponents data={this.getNewNews} props={props} {...this.props} />
+      );
     }
   };
 };
