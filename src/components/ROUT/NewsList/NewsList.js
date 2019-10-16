@@ -1,11 +1,14 @@
 import React from 'react';
 import NewsListItem from '../NewsListItem/NewsListItem';
 
-const NewsList = ({ data }) => {
-  console.log(data);
+const NewsList = ({ data, category }) => {
   return data.map(article => (
     <>
-      <NewsListItem key={article.publishedAt} {...article} />
+      <NewsListItem
+        category={category}
+        key={article.publishedAt}
+        {...article}
+      />
     </>
   ));
 };

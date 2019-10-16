@@ -1,8 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const NewsListItem = ({ title, publishedAt }) => (
+const NewsListItem = ({ title, publishedAt, author, category }) => (
   <li>
-    <Link to={`news/${publishedAt}`}>{title}</Link>
+    <Link
+      to={{
+        pathname: `news/${publishedAt}/category=${category}?search=fdffdf`,
+        state: { category: `${category}` },
+      }}
+    >
+      {title}
+    </Link>
   </li>
 );
 
