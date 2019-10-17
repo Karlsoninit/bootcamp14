@@ -1,0 +1,1 @@
+{"version":3,"sources":["NewsList.module.css"],"names":[],"mappings":"AAAA,2BACE,YAAa,CACb,cACF","file":"pageNews.8c96c257.chunk.css","sourcesContent":[".container {\n  display: flex;\n  flex-wrap: wrap;\n}\n"]}

@@ -1,0 +1,2 @@
+(window.webpackJsonpbootcamp14=window.webpackJsonpbootcamp14||[]).push([[1],{114:function(t,e,n){"use strict";n.r(e);var p=n(0),a=n.n(p);e.default=function(){return a.a.createElement("div",{style:{border:"1px solid tomato",width:"400px",padding:"30px"}},a.a.createElement("input",{type:"text"}),a.a.createElement("input",{type:"text"}),a.a.createElement("input",{type:"text"}),a.a.createElement("input",{type:"text"}))}}}]);
+//# sourceMappingURL=ComponentDropDown.b78169d5.chunk.js.map

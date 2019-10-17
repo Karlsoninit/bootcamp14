@@ -1,0 +1,2 @@
+(window.webpackJsonpbootcamp14=window.webpackJsonpbootcamp14||[]).push([[3],{112:function(n,o,e){"use strict";e.r(o);var t=e(0),a=e.n(t);o.default=function(){return a.a.createElement("h2",null,"Home")}}}]);
+//# sourceMappingURL=pageHome.116fc703.chunk.js.map

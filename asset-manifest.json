@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/bootcamp14/static/css/main.69675d4a.chunk.css",
-    "main.js": "/bootcamp14/static/js/main.f1687664.chunk.js",
-    "main.js.map": "/bootcamp14/static/js/main.f1687664.chunk.js.map",
-    "runtime-main.js": "/bootcamp14/static/js/runtime-main.3751c533.js",
-    "runtime-main.js.map": "/bootcamp14/static/js/runtime-main.3751c533.js.map",
-    "static/js/2.863be817.chunk.js": "/bootcamp14/static/js/2.863be817.chunk.js",
-    "static/js/2.863be817.chunk.js.map": "/bootcamp14/static/js/2.863be817.chunk.js.map",
+    "static/js/0.7e7325fe.chunk.js": "/bootcamp14/static/js/0.7e7325fe.chunk.js",
+    "static/js/0.7e7325fe.chunk.js.map": "/bootcamp14/static/js/0.7e7325fe.chunk.js.map",
+    "ComponentDropDown.js": "/bootcamp14/static/js/ComponentDropDown.b78169d5.chunk.js",
+    "ComponentDropDown.js.map": "/bootcamp14/static/js/ComponentDropDown.b78169d5.chunk.js.map",
+    "main.js": "/bootcamp14/static/js/main.9abf79c8.chunk.js",
+    "main.js.map": "/bootcamp14/static/js/main.9abf79c8.chunk.js.map",
+    "pageHome.js": "/bootcamp14/static/js/pageHome.116fc703.chunk.js",
+    "pageHome.js.map": "/bootcamp14/static/js/pageHome.116fc703.chunk.js.map",
+    "pageNews.css": "/bootcamp14/static/css/pageNews.8c96c257.chunk.css",
+    "pageNews.js": "/bootcamp14/static/js/pageNews.85c31392.chunk.js",
+    "pageNews.js.map": "/bootcamp14/static/js/pageNews.85c31392.chunk.js.map",
+    "pageSingleArticle.js": "/bootcamp14/static/js/pageSingleArticle.ef095acc.chunk.js",
+    "pageSingleArticle.js.map": "/bootcamp14/static/js/pageSingleArticle.ef095acc.chunk.js.map",
+    "runtime-main.js": "/bootcamp14/static/js/runtime-main.29db54c0.js",
+    "runtime-main.js.map": "/bootcamp14/static/js/runtime-main.29db54c0.js.map",
+    "static/js/7.2bbbd989.chunk.js": "/bootcamp14/static/js/7.2bbbd989.chunk.js",
+    "static/js/7.2bbbd989.chunk.js.map": "/bootcamp14/static/js/7.2bbbd989.chunk.js.map",
+    "static/js/8.1fa6cfdd.chunk.js": "/bootcamp14/static/js/8.1fa6cfdd.chunk.js",
+    "static/js/8.1fa6cfdd.chunk.js.map": "/bootcamp14/static/js/8.1fa6cfdd.chunk.js.map",
     "index.html": "/bootcamp14/index.html",
-    "precache-manifest.1cc66bca4f2a4b3d5384be2598d19c16.js": "/bootcamp14/precache-manifest.1cc66bca4f2a4b3d5384be2598d19c16.js",
+    "precache-manifest.bed6c5acace510de0c3dc04c9a3a25d2.js": "/bootcamp14/precache-manifest.bed6c5acace510de0c3dc04c9a3a25d2.js",
     "service-worker.js": "/bootcamp14/service-worker.js",
-    "static/css/main.69675d4a.chunk.css.map": "/bootcamp14/static/css/main.69675d4a.chunk.css.map"
+    "static/css/pageNews.8c96c257.chunk.css.map": "/bootcamp14/static/css/pageNews.8c96c257.chunk.css.map"
   }
 }
