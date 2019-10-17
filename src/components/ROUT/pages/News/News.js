@@ -3,6 +3,8 @@ import NewsList from '../../NewsList/NewsList';
 import { getAllNews, chooseCategory } from '../../API/API';
 import Preloader from '../../Preloader/Preloader';
 import Select from '../../Select/Select';
+import Loadable from 'react-loadable';
+
 let countRender = 0;
 let countDidUpdate = 0;
 let countDidMount = 0;
@@ -10,6 +12,14 @@ let countDidMount = 0;
 const getCategory = (value, options) => {
   return options.find(elem => elem.value === value);
 };
+
+const DropDownComponent = Loadable({
+  loader: () =>
+    import(
+      '../../LogicInnerComponent/DropDown/DropDown' /*webpackChunkName: 'ComponentDropDown' */
+    ),
+  loading: Preloader,
+});
 
 const options = [
   { value: 'business', label: 'business' },
@@ -24,6 +34,7 @@ class News extends Component {
     news: [],
     loader: true,
     category: null,
+    isOpen: false,
   };
 
   componentDidMount() {
@@ -61,13 +72,21 @@ class News extends Component {
     });
   };
 
+  dropDownMenu = () => {
+    this.setState(({ isOpen }) => ({
+      isOpen: !isOpen,
+    }));
+  };
+
   render() {
-    const { news, loader, category } = this.state;
+    const { news, loader, category, isOpen } = this.state;
     console.log('render', countRender++);
     const get = getCategory(category, options);
     console.log('get obj', get);
     return (
       <>
+        <button onClick={this.dropDownMenu}>{isOpen ? 'Close' : 'Open'}</button>
+        {isOpen && <DropDownComponent />}
         <Select
           options={options}
           handleChange={this.handleChange}
