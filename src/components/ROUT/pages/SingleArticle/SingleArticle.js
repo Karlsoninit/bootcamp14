@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-
+import { CSSTransition } from 'react-transition-group';
+import css from './SingleArticle.module.css';
 import { getAllNews, chooseCategory } from '../../API/API';
 import Preloader from '../../Preloader/Preloader';
+import articleModal from './articleModal.module.css';
+
 class SingleArticle extends Component {
   state = {
     article: {},
     loader: true,
+    isOpen: false,
   };
 
   componentDidMount() {
@@ -22,6 +26,7 @@ class SingleArticle extends Component {
             elem => elem.publishedAt === this.props.match.params.someArticle,
           ),
           loader: false,
+          isOpen: true,
         }),
       );
     } else {
@@ -31,6 +36,7 @@ class SingleArticle extends Component {
             elem => elem.publishedAt === this.props.match.params.someArticle,
           ),
           loader: false,
+          isOpen: true,
         }),
       );
     }
@@ -39,20 +45,27 @@ class SingleArticle extends Component {
   back = () => {
     this.props.history.push('/news');
   };
+
   render() {
     console.log('SingleArticle', this.props.match.params.someArticle);
     console.log(this.state.article);
     const { description, urlToImage, title } = this.state.article;
+    const { isOpen } = this.state;
     return (
-      <div>
-        <div style={{ position: 'absolute', top: '50%', left: '45%' }}>
-          {this.state.loader && <Preloader />}
+      <CSSTransition
+        in={isOpen}
+        classNames={articleModal}
+        timeout={3000}
+        unmountOnExit
+      >
+        <div className={css.container}>
+          <div>{this.state.loader && <Preloader />}</div>
+          <h2>{title}</h2>
+          <img className={css.img} alt={urlToImage} src={urlToImage} />
+          <p>{description}</p>
+          <button onClick={this.back}>back to news</button>
         </div>
-        <h2>{title}</h2>
-        <img alt={urlToImage} src={urlToImage} />
-        <p>{description}</p>
-        <button onClick={this.back}>back to news</button>
-      </div>
+      </CSSTransition>
     );
   }
 }

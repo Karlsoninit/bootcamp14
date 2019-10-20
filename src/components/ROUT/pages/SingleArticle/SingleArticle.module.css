@@ -1,0 +1,12 @@
+.container {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  border: 1px solid tomato;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.img {
+  width: 100%;
+}

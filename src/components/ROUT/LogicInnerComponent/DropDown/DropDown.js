@@ -1,13 +1,8 @@
 import React from 'react';
+import css from './DropDown.module.css';
 
 const DropDown = () => (
-  <div
-    style={{
-      border: '1px solid tomato',
-      width: '400px',
-      padding: '30px',
-    }}
-  >
+  <div className={css.container}>
     <input type="text" />
     <input type="text" />
     <input type="text" />

@@ -4,6 +4,11 @@ import { getAllNews, chooseCategory } from '../../API/API';
 import Preloader from '../../Preloader/Preloader';
 import Select from '../../Select/Select';
 import Loadable from 'react-loadable';
+import { CSSTransition } from 'react-transition-group';
+import modal from '../../LogicInnerComponent/DropDown/showModal.module.css';
+import DropDownComponent from '../../LogicInnerComponent/DropDown/DropDown';
+
+console.log('modal', modal);
 
 let countRender = 0;
 let countDidUpdate = 0;
@@ -13,13 +18,13 @@ const getCategory = (value, options) => {
   return options.find(elem => elem.value === value);
 };
 
-const DropDownComponent = Loadable({
-  loader: () =>
-    import(
-      '../../LogicInnerComponent/DropDown/DropDown' /*webpackChunkName: 'ComponentDropDown' */
-    ),
-  loading: Preloader,
-});
+// const DropDownComponent = Loadable({
+//   loader: () =>
+//     import(
+//       '../../LogicInnerComponent/DropDown/DropDown' /*webpackChunkName: 'ComponentDropDown' */
+//     ),
+//   loading: Preloader,
+// });
 
 const options = [
   { value: 'business', label: 'business' },
@@ -86,7 +91,16 @@ class News extends Component {
     return (
       <>
         <button onClick={this.dropDownMenu}>{isOpen ? 'Close' : 'Open'}</button>
-        {isOpen && <DropDownComponent />}
+
+        <CSSTransition
+          in={isOpen}
+          timeout={3000}
+          classNames={modal}
+          unmountOnExit
+        >
+          <DropDownComponent />
+        </CSSTransition>
+
         <Select
           options={options}
           handleChange={this.handleChange}
