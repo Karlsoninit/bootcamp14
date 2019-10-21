@@ -1,11 +1,11 @@
 import React from 'react';
-import NewsRoute from './ROUT/NewsRoute/NewsRoute';
-import { BrowserRouter as Router } from 'react-router-dom';
-
+import Counter from './Counter/CounterContainer';
+import Select from './StepSelect/StepSelect';
 const App = () => (
-  <Router>
-    <NewsRoute />
-  </Router>
+  <>
+    <Select />
+    <Counter />
+  </>
 );
 
 export default App;
