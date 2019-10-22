@@ -34,9 +34,29 @@ const counter = (state = 0, { type, payload }) => {
   }
 };
 
-const step = (state = { value: 0, label: '0' }, { type, payload }) => {
+const step = (state = 10, { type, payload }) => {
   switch (type) {
     case Type.CHOOSE_STEP:
+      return payload;
+    default:
+      return state;
+  }
+};
+
+const post = (state = [], { type, payload }) => {
+  switch (type) {
+    case Type.FETCH_POST:
+      return payload;
+    default:
+      return state;
+  }
+};
+const chooseCategory = (
+  state = { value: 'Картофель', label: 'Картофель' },
+  { type, payload },
+) => {
+  switch (type) {
+    case Type.CHOOSE_CATEGORY:
       return payload;
     default:
       return state;
@@ -46,4 +66,6 @@ const step = (state = { value: 0, label: '0' }, { type, payload }) => {
 export const reducer = combineReducers({
   value: counter,
   step: step,
+  posts: post,
+  category: chooseCategory,
 });

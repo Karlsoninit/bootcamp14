@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Counter = ({ value, onIncrement, onDecrement, unique, step }) => {
-  console.log(value);
+const Counter = ({ value, onIncrement, onDecrement, step }) => {
   return (
     <>
       <button type="button" onClick={() => onIncrement(step)}>

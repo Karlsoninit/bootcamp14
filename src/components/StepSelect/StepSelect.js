@@ -1,7 +1,5 @@
 import React from 'react';
 import Select from 'react-select';
-import { connect } from 'react-redux';
-import { chooseStep } from '../redux/actions';
 
 const options = [
   { value: 10, label: '10' },
@@ -10,18 +8,17 @@ const options = [
   { value: 40, label: '40' },
 ];
 
-const StepSelect = ({ valueDefault, handleChange }) => (
-  <Select options={options} onChange={handleChange} value={valueDefault} />
-);
+const getOptionsObject = (options, num) =>
+  options.find(elem => elem.value === num);
 
-const mapStateToProps = state => ({
-  valueDefault: state.counter.step,
-});
-const mapDispatchToProps = dispatch => ({
-  handleChange: step => dispatch(chooseStep(step)),
-});
+const StepSelect = ({ valueDefault, handleChange }) => {
+  return (
+    <Select
+      options={options}
+      onChange={handleChange}
+      value={getOptionsObject(options, valueDefault)}
+    />
+  );
+};
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(StepSelect);
+export default StepSelect;
