@@ -1,15 +1,20 @@
 import React from 'react';
-import Counter from './Counter/CounterContainer';
-import Select from './StepSelect/StepSelectContainer';
-import Post from './Post/Post';
-import PostSelect from './Post/PostSelect';
+import Menu from './Menu/MenuContainer';
+// import Counter from './Counter/CounterContainer';
+// import Select from './StepSelect/StepSelectContainer';
+
+// const App = () => (
+//   <>
+//     <Select />
+//     <Counter />
+//   </>
+// );
+
+// export default App;
 
 const App = () => (
   <>
-    <Select />
-    <Counter />
-    <PostSelect />
-    <Post />
+    <Menu />
   </>
 );
 

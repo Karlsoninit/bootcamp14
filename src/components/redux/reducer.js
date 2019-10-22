@@ -1,6 +1,7 @@
 import Type from './type';
 import { combineReducers } from 'redux';
-
+import { menu } from '../Menu/MenuReducer';
+import { choooseCategory } from '../MenuSelect/MenuSelectReducer';
 // для работы с обьектом
 
 // const counter = (state = { value: 0, label: '0' }, { type, payload }) => {
@@ -43,29 +44,9 @@ const step = (state = 10, { type, payload }) => {
   }
 };
 
-const post = (state = [], { type, payload }) => {
-  switch (type) {
-    case Type.FETCH_POST:
-      return payload;
-    default:
-      return state;
-  }
-};
-const chooseCategory = (
-  state = { value: 'Картофель', label: 'Картофель' },
-  { type, payload },
-) => {
-  switch (type) {
-    case Type.CHOOSE_CATEGORY:
-      return payload;
-    default:
-      return state;
-  }
-};
-
 export const reducer = combineReducers({
   value: counter,
-  step: step,
-  posts: post,
-  category: chooseCategory,
+  step,
+  menu,
+  category: choooseCategory,
 });

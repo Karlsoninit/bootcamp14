@@ -1,7 +1,6 @@
 import React from 'react';
 import Select from 'react-select';
-import { connect } from 'react-redux';
-import { chooseCategory } from '../redux/actions';
+
 const options = [
   { value: 'Картофель', label: 'Картофель' },
   { value: 'Помидоры', label: 'Помидоры' },
@@ -12,19 +11,9 @@ const options = [
   { value: 'Говядина', label: 'Говядина' },
   { value: 'рис', label: 'рис' },
 ];
-const PostSelect = ({ value, chooseCategory }) => (
+
+const MenuSelect = ({ value, chooseCategory }) => (
   <Select options={options} onChange={chooseCategory} value={value} />
 );
 
-const mapStateToProps = state => ({
-  value: state.counter.category,
-});
-
-const mapDispatchToProps = {
-  chooseCategory,
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(PostSelect);
+export default MenuSelect;

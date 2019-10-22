@@ -1,10 +1,9 @@
 import { connect } from 'react-redux';
 import { chooseStep } from '../redux/actions';
 import StepSelect from './StepSelect';
-import { getStep } from './selectors';
 
 const mapStateToProps = state => ({
-  valueDefault: getStep(state),
+  valueDefault: state.counter.value,
 });
 const mapDispatchToProps = dispatch => ({
   handleChange: step => dispatch(chooseStep(step.value)),

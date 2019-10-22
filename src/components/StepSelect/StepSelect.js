@@ -12,6 +12,7 @@ const getOptionsObject = (options, num) =>
   options.find(elem => elem.value === num);
 
 const StepSelect = ({ valueDefault, handleChange }) => {
+  console.log('valueDefault', valueDefault);
   return (
     <Select
       options={options}
