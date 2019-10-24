@@ -1,5 +1,10 @@
 import React from 'react';
+import Search from './Search/Search';
 
-const App = () => <p>App</p>;
+const App = () => (
+  <>
+    <Search />
+  </>
+);
 
 export default App;
