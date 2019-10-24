@@ -1,22 +1,5 @@
-import React, { createContext } from 'react';
-import Counter from './Counter/Counter';
-import Post from './Post/Post';
-import Test from './Test/Test';
+import React from 'react';
 
-export const { Provider, Consumer } = createContext();
-const App = () => {
-  return (
-    <>
-      <Provider
-        value={{
-          word: 'work',
-        }}
-      >
-        <Test />
-      </Provider>
-      <Counter />
-      <Post />
-    </>
-  );
-};
+const App = () => <p>App</p>;
+
 export default App;
