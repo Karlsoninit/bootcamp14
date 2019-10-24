@@ -1,11 +1,14 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
-import { devToolsEnhancer } from 'redux-devtools-extension';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import thunk from 'redux-thunk';
 import reducer from '../redux/reducers';
 
+const middleWare = applyMiddleware(thunk);
+
 const rootReducer = combineReducers({
-  news: reducer,
+  DailyMail: reducer,
 });
 
-const store = createStore(rootReducer, devToolsEnhancer());
+const store = createStore(rootReducer, composeWithDevTools(middleWare));
 
 export default store;
