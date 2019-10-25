@@ -1,0 +1,25 @@
+.container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid tomato;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid green;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  background-color: aquamarine;
+  color: white;
+  margin: auto;
+}
